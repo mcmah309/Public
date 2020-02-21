@@ -1,8 +1,8 @@
-Optimization 1: Since each matrix of size nxm can be viewed as and an array with size nxm, computation is done by iterat tnghrough the matrix in the same way the data is stored. This is faster since it utilizes localization and maximizes cache hits, instead of constantly jumping around the stack and recieving cache misses and possible page faults.
+Optimization 1: Since each matrix of size nxm can be viewed as and an array with size nxm, computation is done by iterating through the matrix in the same way the data is stored. This is faster since it utilizes localization and maximizes cache hits, instead of constantly jumping around the stack and recieving cache misses and possible page faults.
 
-Optimization 2: The inner loop is unrolled four times. This made it faster since the program will be able to compute multiple computations in parallel once compilation optimization is done and the number of comparisons the function needs to make is reduced by a factor of 4. Addtionally, this utilizes ll the registers of the cpu. Any more loop unrolling leads to no performance improvement.
+Optimization 2: The inner loop is unrolled four times. This made it faster since the program will be able to compute multiple computations in parallel once compilation optimization is done and the number of comparisons the function needs to make is reduced by a factor of 4. Addtionally, this utilizes all the registers of the cpu. Any more loop unrolling leads to no performance improvement.
 
-Optimization 3: Function calls were minimized to one case per function and the retrieved data is stored. This way, whenever the next information is needed, the retrieved pointer is incremented within bounds, instead of using another function.
+Optimization 3: Function calls were minimized to one case per function and the retrieved data is stored. This way, whenever the next information is needed, the retrieved pointer is incremented within bounds, instead of using another function call.
 
 Run "make" to compile the program and "make clean" to erase the executables.
 
