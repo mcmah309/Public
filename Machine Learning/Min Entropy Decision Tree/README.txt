@@ -1,0 +1,1 @@
+A decision tree is generated that selects the first node based on entropy such information gain is maximized and so on. Based on the training data, the algorithm has a 96% success rate.

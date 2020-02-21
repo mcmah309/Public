@@ -1,0 +1,1 @@
+Algorithm takes in 64 inputs that represent pixels 0-1 grayscale color value. Then Trains on 3000 data samples with different hidden node layer sizes. After training validation, the best hidden layer size is determined to be 8 nodes for all layers. Forward propagation on this network yields a 97% success rate on identifying which number is being drawn.
