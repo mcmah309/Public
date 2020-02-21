@@ -1,6 +1,6 @@
-﻿Compilation: In folder p4, run "make" to compile. This will produce the executables “client” and “server” located in folder p4.
+﻿Compilation: In folder MapReduce, run "make" to compile. This will produce the executables “client” and “server” located in folder MapReduce.
 
-In terminal, inside file p4, run "make clean" to remove all the executables files, MapperInput, and log
+In terminal, inside file MapReduce, run "make clean" to remove all the executables files, MapperInput, and log
 
 Additional assumptions: Arguments when running the program will be in this format- 
 	For Server:
