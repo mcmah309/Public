@@ -1,0 +1,16 @@
+gcc -o client ./PA4_Client/src/client.c ./PA4_Client/src/phase1.c ./PA4_Client/src/phase2.c ./PA4_Client/src/phase3.c -pthread
+
+gcc -o server ./PA4_Server/src/server.c -pthread
+
+
+Executed ./server 8088&
+Executed ./client ./PA4_Client/Testcases/TestCase2 4 127.0.0.1 8088
+with commands.txt (1 2 3 4 5 6 7)
+
+The ../Testcases/TestCase1 folder is empty
+
+
+
+Executed ./server 8088&
+Executed ./client ./PA4_Client/Testcases/TestCase2 5 127.0.0.1 8088
+with commands.txt (1 3 4 5 6 7)
